@@ -38,7 +38,7 @@ export default function CTA() {
 
           <Flex
             maxW="90%"
-            w="1232px"
+            w="1600px"
             flexDir={{
               base: "column",
               sm: "column",

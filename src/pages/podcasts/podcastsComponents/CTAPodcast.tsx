@@ -38,7 +38,7 @@ export default function CTAPodcast() {
 
           <Flex
             maxW="90%"
-            w="1232px"
+            w="1600px"
             flexDir={{
               base: "column",
               sm: "column",
