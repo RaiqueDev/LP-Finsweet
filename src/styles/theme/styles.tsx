@@ -12,6 +12,30 @@ export const LinkNavbar = chakra(Text, {
   },
 });
 
+export const Caption = chakra(Text, {
+  baseStyle: {
+    fontFamily: 'Inter',
+    fontStyle: "normal",
+    fontWeight: "600",
+    fontSize: "16px",
+    lineHeight: "20px",
+    letterSpacing: "3px",
+    textTransform: "uppercase",
+    color: "#503AE7"
+  }
+})
+
+export const SeeMore = chakra(Text, {
+  baseStyle: {
+    fontFamily: 'Inter',
+    fontStyle: "normal",
+    fontWeight: "600",
+    fontSize: "16px",
+    lineHeight: "150%",
+    color: "#503AE7"
+  }
+})
+
 export const BodyText = chakra(Text, {
   baseStyle: {
     fontFamily: "Inter",

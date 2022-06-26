@@ -1,15 +1,31 @@
-import { Flex } from "@chakra-ui/react";
+import {
+  Box
+} from "@chakra-ui/react";
+
+import {
+  Heading2,
+  Heading4
+} from "../../../styles/theme/styles";
 
 export default function Header() {
   return (
     <>
-      <Flex
-        maxW="100%"
-        w="563px"
-        h="74px"
-        bg="pink">
+      <Box
+        w="100%"
+        h="74px">
 
-      </Flex>
+        <Heading2
+          textAlign="left">
+          Contact Us
+        </Heading2>
+
+        <Heading4
+          textAlign="left"
+          mt="16px"
+          color="#503AE7">
+          Interested in collaborating? Please fill the form below.
+        </Heading4>
+      </Box>
     </>
   )
 }

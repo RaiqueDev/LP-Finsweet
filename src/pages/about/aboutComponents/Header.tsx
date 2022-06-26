@@ -1,4 +1,13 @@
-import { Box, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex
+} from "@chakra-ui/react";
+
+import {
+  BodyText,
+  Heading1
+} from "../../../styles/theme/styles";
 
 export default function Header() {
   return (
@@ -23,13 +32,47 @@ export default function Header() {
           justifyContent="space-between"
           gap="5">
 
-          <Box
+          <Flex
             maxW="100%"
             w="480px"
             h="290px"
-            bg="pink">
+            flexDir="column"
+            alignItems={{
+              base: "center",
+              sm: "center",
+              md: "center",
+              lg: "start",
+              xl: "start"
+            }}>
 
-          </Box>
+            <Heading1>
+              About Finsweet
+              Podcast
+            </Heading1>
+
+            <BodyText
+              mt="32px">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua.
+            </BodyText>
+
+            <Button
+              mt="32px"
+              w="185px"
+              h="48px"
+              bg="#503AE7"
+              borderRadius="none"
+
+              fontFamily='Inter'
+              fontStyle="normal"
+              fontWeight="500"
+              fontSize="16px"
+              lineHeight="24px"
+              color="#FFFFFF">
+              Subscribe Now!
+            </Button>
+          </Flex>
 
           <Box
             mt={{
