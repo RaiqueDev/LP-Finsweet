@@ -11,8 +11,7 @@ export default function Header() {
   return (
     <>
       <Box
-        w="100%"
-        h="74px">
+        w="100%">
 
         <Heading2
           textAlign="left">

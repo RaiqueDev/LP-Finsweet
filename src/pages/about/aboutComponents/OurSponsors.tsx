@@ -5,7 +5,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading1,
   Heading3
 } from "../../../styles/theme/styles";
@@ -34,7 +34,13 @@ export default function OurSponsors() {
           <Heading1
             maxW="100%"
             w="324px"
-            h="62px">
+            textAlign={{
+              base: "center",
+              sm: "center",
+              md: "center",
+              lg: "left",
+              xl: "left"
+            }}>
             Our Sponsors
           </Heading1>
 
@@ -106,17 +112,18 @@ export default function OurSponsors() {
               h='224px'>
 
               <Box
-                color="#F4F2FF"
                 m="32px">
 
-                <Heading3>
+                <Heading3
+                  color="offWhite">
                   Become a Sponsor
                 </Heading3>
 
-                <BodyText
+                <Body
+                  color="offWhite"
                   mt="64px">
                   Contact Now
-                </BodyText>
+                </Body>
 
                 <Box
                   mt="8px">

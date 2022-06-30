@@ -4,7 +4,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading2
 } from "../../../styles/theme/styles";
 
@@ -41,7 +41,6 @@ export default function WhoIsItFor() {
 
           <Flex
             w="100%"
-            h="176px"
             alignItems="center"
             justifyContent="center">
 
@@ -52,14 +51,29 @@ export default function WhoIsItFor() {
               flexDir="column"
               justifyContent="space-between">
 
-              <Heading2>
-                A podcast for makers and<br />
+              <Heading2
+                textAlign={{
+                  base: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "left",
+                  xl: "left"
+                }}>
+                A podcast for makers and
                 entrepreneurs
               </Heading2>
 
-              <BodyText>
+              <Body
+                textAlign={{
+                  base: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "left",
+                  xl: "left"
+                }}
+                mt="28px">
                 Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-              </BodyText>
+              </Body>
             </Flex>
           </Flex>
 

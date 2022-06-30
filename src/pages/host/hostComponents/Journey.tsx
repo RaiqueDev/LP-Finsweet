@@ -4,7 +4,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading2
 } from "../../../styles/theme/styles";
 
@@ -39,30 +39,50 @@ export default function Journey() {
 
           <Box
             maxW="100%"
-            w="480px"
-            h="388px">
+            w="480px">
 
-            <Heading2>
+            <Heading2
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
               My origins on YouTube<br />
               in 2008
             </Heading2>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
               eget condimentum enim libero ultricies amet odio fringilla. Ut
               nibh morbi augue porta aliquet commodo. Fermentum auctor
               lacus eget in ut integer viverra sed. Penatibus tortor
               consequat, habitasse non nisl
-            </BodyText>
+            </Body>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus
               cras lacus tellus morbi viverra suspendisse ornare. Sit
               volutpat, volutpat ut netus malesuada enim penatibus non
               aliquet.
-            </BodyText>
+            </Body>
           </Box>
 
           <Box
@@ -74,36 +94,56 @@ export default function Journey() {
               xl: "0px"
             }}
             maxW="100%"
-            w="480px"
-            h="472px">
+            w="480px">
 
-            <Heading2>
+            <Heading2
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
               From tech journalist,<br />
               to Vlogger and YouTuber
             </Heading2>
 
-            <BodyText
+            <Body
               mt="32px">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus
               cras lacus tellus morbi viverra suspendisse ornare. Sit
               volutpat, volutpat ut netus malesuada enim penatibus non
               aliquet.
-            </BodyText>
+            </Body>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
               eget condimentum enim libero ultricies amet odio fringilla. Ut
               nibh morbi augue porta aliquet commodo. Fermentum auctor
               lacus eget in ut integer viverra sed. Penatibus tortor
               consequat, habitasse non nisl
-            </BodyText>
+            </Body>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
               eget condimentum enim libero ultricies ame\
-            </BodyText>
+            </Body>
           </Box>
         </Flex>
       </Flex>

@@ -2,7 +2,13 @@ import {
   Box,
   Flex
 } from "@chakra-ui/react";
-import { BodyText, Caption, Heading2, SeeMore } from "../../../styles/theme/styles";
+
+import {
+  Body,
+  Caption,
+  Heading2,
+  SeeMore
+} from "../../../styles/theme/styles";
 
 export default function BlogHero() {
   return (
@@ -30,7 +36,6 @@ export default function BlogHero() {
           <Flex
             maxW="100%"
             w="525px"
-            h="268px"
             flexDir="column"
             alignItems={{
               base: "center",
@@ -40,28 +45,51 @@ export default function BlogHero() {
               xl: "start"
             }}>
 
-            <Caption>
+            <Caption
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
+              color="blue">
               Featured
             </Caption>
 
             <Heading2
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="16px">
               Should I raise money for my
               startup, or not?
             </Heading2>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="16px">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua.
-            </BodyText>
+            </Body>
 
             <SeeMore
               mt="32px"
               display="flex"
               alignItems="center"
-              gap="8px">
+              gap="8px"
+              color="blue">
               Read Now
 
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" fill="none" viewBox="0 0 23 12">

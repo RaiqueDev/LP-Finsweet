@@ -5,8 +5,9 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
-  Heading1
+  Body,
+  Heading1,
+  SecondaryButton
 } from "../../../styles/theme/styles";
 
 import CTABPodcast from '../../../styles/images/CTABackgroundPodcast.svg';
@@ -15,7 +16,6 @@ export default function CTAPodcast() {
   return (
     <>
       <Flex
-        h="586px"
         mt="128px"
         bg="#14142B"
         justifyContent="center"
@@ -23,7 +23,8 @@ export default function CTAPodcast() {
         bgSize="cover"
         bgPos="center"
         bgRepeat="no-repeat"
-        bgImg={CTABPodcast}>
+        bgImg={CTABPodcast}
+        py="128px">
 
         <Flex
           w="100%"
@@ -37,7 +38,7 @@ export default function CTAPodcast() {
           }}>
 
           <Flex
-            maxW="90%"
+            maxW="100%"
             w="1600px"
             flexDir={{
               base: "column",
@@ -57,38 +58,52 @@ export default function CTAPodcast() {
             gap="5">
 
             <Flex
-              w="100%"
-              h="330px"
+              w="90%"
               alignItems="center"
-              justifyContent="flex-start">
+              justifyContent="center">
 
               <Box
-                maxW="100%"
+                maxW="90%"
                 w="440px"
                 h="100%"
-                color="#F4F2FF">
+                color="offWhite">
 
-                <Heading1>
+                <Heading1
+                  textAlign={{
+                    base: "center",
+                    sm: "center",
+                    md: "center",
+                    lg: "left",
+                    xl: "left"
+                  }}
+                  color="offWhite">
                   Become The Hero Of Your Own Story
                 </Heading1>
 
-                <BodyText
-                  mt="32px">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat, volutpat ut netus malesuada enim penatibus non aliquet.
-                </BodyText>
-
-                <Button
+                <Body
+                  textAlign={{
+                    base: "center",
+                    sm: "center",
+                    md: "center",
+                    lg: "left",
+                    xl: "left"
+                  }}
                   mt="32px"
-                  border="2px solid #F4F2FF"
-                  bg="none"
-                  borderRadius="none"
-                  fontWeight="500">
+                  color="offWhite">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat, volutpat ut netus malesuada enim penatibus non aliquet.
+                </Body>
+
+                <SecondaryButton
+                  mt="32px"
+                  w="148px"
+                  border="2px solid #F4F2FF">
                   Contact us
-                </Button>
+                </SecondaryButton>
               </Box>
             </Flex>
 
             <Flex
+              mt="128px"
               w="100%"
               h="146px"
               alignItems="center"

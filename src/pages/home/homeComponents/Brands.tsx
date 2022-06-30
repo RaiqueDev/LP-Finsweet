@@ -2,6 +2,7 @@ import {
   Flex,
   SimpleGrid,
 } from "@chakra-ui/react";
+
 import {
   Heading3
 } from "../../../styles/theme/styles";
@@ -12,7 +13,7 @@ export default function Brands() {
       <Flex
         mt="192px"
         w="100%"
-        items-center
+        alignItems="center"
         justifyContent="center">
 
         <SimpleGrid
@@ -22,14 +23,12 @@ export default function Brands() {
             lg: 3,
             xl: 5
           }}
-          spacing='16px'
-          placeItems={"center"}
-          maxW="90%"
-          w="1280px">
+          placeItems="center"
+          w="90%"
+          gap="32px">
 
           <Flex
             w="100%"
-            h='37px'
             alignItems="center"
             justifyContent={{
               base: "center",
@@ -39,14 +38,20 @@ export default function Brands() {
               xl: "flex-start"
             }}>
 
-            <Heading3>
+            <Heading3
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
               Podcast Available On
             </Heading3>
           </Flex>
 
           <Flex
             w="100%"
-            h='37px'
             alignItems="center"
             justifyContent={{
               base: "center",
@@ -77,7 +82,6 @@ export default function Brands() {
 
           <Flex
             w="100%"
-            h='37px'
             alignItems="center"
             justifyContent={{
               base: "center",
@@ -103,7 +107,6 @@ export default function Brands() {
 
           <Flex
             w="100%"
-            h='37px'
             alignItems="center"
             justifyContent={{
               base: "center",
@@ -144,7 +147,6 @@ export default function Brands() {
 
           <Flex
             w="100%"
-            h='37px'
             alignItems="center"
             justifyContent={{
               base: "center",

@@ -60,13 +60,14 @@ export default function Achievements() {
 
               </Box>
 
-              <Box
-                color="white">
-                <Heading1>
+              <Box>
+                <Heading1
+                  color="offWhite">
                   500+
                 </Heading1>
 
-                <Heading2>
+                <Heading2
+                  color="offWhite">
                   Podcasts
                 </Heading2>
               </Box>
@@ -100,13 +101,14 @@ export default function Achievements() {
 
               </Box>
 
-              <Box
-                color="white">
-                <Heading1>
+              <Box>
+                <Heading1
+                  color="offWhite">
                   24M
                 </Heading1>
 
-                <Heading2>
+                <Heading2
+                  color="offWhite">
                   Views
                 </Heading2>
               </Box>
@@ -144,13 +146,14 @@ export default function Achievements() {
 
               </Box>
 
-              <Box
-                color="white">
-                <Heading1>
+              <Box>
+                <Heading1
+                  color="offWhite">
                   600K
                 </Heading1>
 
-                <Heading2>
+                <Heading2
+                  color="offWhite">
                   Subscribers
                 </Heading2>
               </Box>
@@ -187,13 +190,14 @@ export default function Achievements() {
 
               </Box>
 
-              <Box
-                color="white">
-                <Heading1>
+              <Box>
+                <Heading1
+                  color="offWhite">
                   500+
                 </Heading1>
 
-                <Heading2>
+                <Heading2
+                  color="offWhite">
                   Views
                 </Heading2>
               </Box>

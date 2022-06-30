@@ -1,5 +1,12 @@
-import { Box, Flex } from "@chakra-ui/react";
-import { BodyText, Heading2 } from "../../../styles/theme/styles";
+import {
+  Box,
+  Flex
+} from "@chakra-ui/react";
+
+import {
+  Body,
+  Heading2
+} from "../../../styles/theme/styles";
 
 export default function DreamSection() {
   return (
@@ -27,7 +34,6 @@ export default function DreamSection() {
           <Flex
             maxW="100%"
             w="522px"
-            h="268px"
             flexDir="column"
             alignItems={{
               base: "center",
@@ -39,21 +45,42 @@ export default function DreamSection() {
 
             <Heading2
               maxW="90%"
-              w="322px">
+              w="322px"
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
               A small story about
               a big dream  —
             </Heading2>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon
-            </BodyText>
+            </Body>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px"
               fontWeight="600">
               Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and
-            </BodyText>
+            </Body>
           </Flex>
 
           <Flex
@@ -74,7 +101,13 @@ export default function DreamSection() {
               justifyContent="flex-end">
 
               <Box
-                maxW="90%"
+                maxW={{
+                  base: "100%",
+                  sm: "100%",
+                  md: "90%",
+                  lg: "90%",
+                  xl: "90%"
+                }}
                 w="630px"
                 h="615px"
                 bg="green"

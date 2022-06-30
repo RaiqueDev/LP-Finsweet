@@ -2,10 +2,15 @@ import {
   Box,
   Flex,
   GridItem,
-  SimpleGrid,
-  Text
+  SimpleGrid
 } from "@chakra-ui/react";
-import { BodyText, Heading2, Heading3, SeeMore } from "../../../styles/theme/styles";
+
+import {
+  Body,
+  Heading2,
+  Heading3,
+  SeeMore
+} from "../../../styles/theme/styles";
 
 export default function AllBlogs() {
   return (
@@ -35,15 +40,18 @@ export default function AllBlogs() {
               lg: 3,
               xl: 3
             }}
-            spacing='16px'
-            spacingY="64px"
-            placeItems={"center"}
+            gap={{
+              base: "16",
+              sm: "16",
+              md: "8",
+              lg: "8",
+              xl: "16"
+            }}
             w="100%"
             mt="48px">
 
             <GridItem
               w='100%'
-              h='460px'
               display={{
                 base: "grid",
                 sm: "flex",
@@ -53,13 +61,13 @@ export default function AllBlogs() {
               }}
               gap={2}
               alignItems="center"
-              justifyItems="space-between" >
+              justifyItems="space-between">
 
               <Box
                 w="100%"
                 h="256px"
-                bgSize="100%"
                 bgPosition="center"
+                bgSize="cover"
                 bgRepeat="no-repeat"
                 bgImg="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
@@ -76,14 +84,14 @@ export default function AllBlogs() {
                   business brand
                 </Heading3>
 
-                <BodyText
+                <Body
                   mt="16px"
                   w="100%"
                   textAlign="left">
 
                   Lorem ipsum at vero eos et accusam et justo duo
                   dolores et ea rebum.
-                </BodyText>
+                </Body>
 
                 <Flex
                   mt="16px"
@@ -93,7 +101,8 @@ export default function AllBlogs() {
                   justifyContent="space-between"
                   cursor="pointer">
 
-                  <SeeMore>
+                  <SeeMore
+                    color="blue">
                     Read Now
                   </SeeMore>
                 </Flex>
@@ -102,7 +111,6 @@ export default function AllBlogs() {
 
             <GridItem
               w='100%'
-              h='460px'
               display={{
                 base: "grid",
                 sm: "flex",
@@ -112,13 +120,13 @@ export default function AllBlogs() {
               }}
               gap={2}
               alignItems="center"
-              justifyItems="space-between" >
+              justifyItems="space-between">
 
               <Box
                 w="100%"
                 h="256px"
-                bgSize="100%"
                 bgPosition="center"
+                bgSize="cover"
                 bgRepeat="no-repeat"
                 bgImg="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" />
 
@@ -135,14 +143,14 @@ export default function AllBlogs() {
                   business brand
                 </Heading3>
 
-                <BodyText
+                <Body
                   mt="16px"
                   w="100%"
                   textAlign="left">
 
                   Lorem ipsum at vero eos et accusam et justo duo
                   dolores et ea rebum.
-                </BodyText>
+                </Body>
 
                 <Flex
                   mt="16px"
@@ -152,7 +160,8 @@ export default function AllBlogs() {
                   justifyContent="space-between"
                   cursor="pointer">
 
-                  <SeeMore>
+                  <SeeMore
+                    color="blue">
                     Read Now
                   </SeeMore>
                 </Flex>
@@ -161,7 +170,6 @@ export default function AllBlogs() {
 
             <GridItem
               w='100%'
-              h='460px'
               display={{
                 base: "grid",
                 sm: "flex",
@@ -176,8 +184,8 @@ export default function AllBlogs() {
               <Box
                 w="100%"
                 h="256px"
-                bgSize="100%"
                 bgPosition="center"
+                bgSize="cover"
                 bgRepeat="no-repeat"
                 bgImg="https://images.pexels.com/photos/1181715/pexels-photo-1181715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
@@ -194,14 +202,14 @@ export default function AllBlogs() {
                   your business
                 </Heading3>
 
-                <BodyText
+                <Body
                   mt="16px"
                   w="100%"
                   textAlign="left">
 
                   Lorem ipsum at vero eos et accusam et justo duo
                   dolores et ea rebum.
-                </BodyText>
+                </Body>
 
                 <Flex
                   mt="16px"
@@ -211,7 +219,8 @@ export default function AllBlogs() {
                   justifyContent="space-between"
                   cursor="pointer">
 
-                  <SeeMore>
+                  <SeeMore
+                    color="blue">
                     Read Now
                   </SeeMore>
                 </Flex>
@@ -220,7 +229,6 @@ export default function AllBlogs() {
 
             <GridItem
               w='100%'
-              h='460px'
               display={{
                 base: "grid",
                 sm: "flex",
@@ -235,8 +243,8 @@ export default function AllBlogs() {
               <Box
                 w="100%"
                 h="256px"
-                bgSize="100%"
                 bgPosition="center"
+                bgSize="cover"
                 bgRepeat="no-repeat"
                 bgImg="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
@@ -253,14 +261,14 @@ export default function AllBlogs() {
                   startup, or not?
                 </Heading3>
 
-                <BodyText
+                <Body
                   mt="16px"
                   w="100%"
                   textAlign="left">
 
                   Lorem ipsum at vero eos et accusam et justo duo
                   dolores et ea rebum.
-                </BodyText>
+                </Body>
 
                 <Flex
                   mt="16px"
@@ -270,7 +278,8 @@ export default function AllBlogs() {
                   justifyContent="space-between"
                   cursor="pointer">
 
-                  <SeeMore>
+                  <SeeMore
+                    color="blue">
                     Read Now
                   </SeeMore>
                 </Flex>
@@ -279,7 +288,6 @@ export default function AllBlogs() {
 
             <GridItem
               w='100%'
-              h='460px'
               display={{
                 base: "grid",
                 sm: "flex",
@@ -294,8 +302,8 @@ export default function AllBlogs() {
               <Box
                 w="100%"
                 h="256px"
-                bgSize="100%"
                 bgPosition="center"
+                bgSize="cover"
                 bgRepeat="no-repeat"
                 bgImg="https://images.pexels.com/photos/7578685/pexels-photo-7578685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
@@ -312,14 +320,14 @@ export default function AllBlogs() {
                   your business
                 </Heading3>
 
-                <BodyText
+                <Body
                   mt="16px"
                   w="100%"
                   textAlign="left">
 
                   Lorem ipsum at vero eos et accusam et justo duo
                   dolores et ea rebum.
-                </BodyText>
+                </Body>
 
                 <Flex
                   mt="16px"
@@ -329,7 +337,8 @@ export default function AllBlogs() {
                   justifyContent="space-between"
                   cursor="pointer">
 
-                  <SeeMore>
+                  <SeeMore
+                    color="blue">
                     Read Now
                   </SeeMore>
                 </Flex>
@@ -338,7 +347,6 @@ export default function AllBlogs() {
 
             <GridItem
               w='100%'
-              h='460px'
               display={{
                 base: "grid",
                 sm: "flex",
@@ -353,8 +361,8 @@ export default function AllBlogs() {
               <Box
                 w="100%"
                 h="256px"
-                bgSize="100%"
                 bgPosition="center"
+                bgSize="cover"
                 bgRepeat="no-repeat"
                 bgImg="https://images.pexels.com/photos/7148048/pexels-photo-7148048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
@@ -371,14 +379,14 @@ export default function AllBlogs() {
                   your business
                 </Heading3>
 
-                <BodyText
+                <Body
                   mt="16px"
                   w="100%"
                   textAlign="left">
 
                   Lorem ipsum at vero eos et accusam et justo duo
                   dolores et ea rebum.
-                </BodyText>
+                </Body>
 
                 <Flex
                   mt="16px"
@@ -388,7 +396,8 @@ export default function AllBlogs() {
                   justifyContent="space-between"
                   cursor="pointer">
 
-                  <SeeMore>
+                  <SeeMore
+                    color="blue">
                     Read Now
                   </SeeMore>
                 </Flex>

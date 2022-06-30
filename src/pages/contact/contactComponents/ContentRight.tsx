@@ -2,7 +2,7 @@ import {
   Box,
   Flex,
   Grid,
-  GridItem,
+  GridItem
 } from "@chakra-ui/react";
 
 import {
@@ -15,7 +15,6 @@ export default function ContentRight() {
       <Flex
         maxW="100%"
         w="468px"
-        h="300px"
         flexDir="column"
         alignItems={{
           base: "center",
@@ -43,19 +42,12 @@ export default function ContentRight() {
               xl: 'repeat(2, 1fr)'
             }}
             gap={8}
-            placeItems="center"
             w="100%">
 
             <GridItem
               w='100%'
               h="32px"
-              display={{
-                base: "grid",
-                sm: "flex",
-                md: "grid",
-                lg: "grid",
-                xl: "grid"
-              }}
+              display="grid"
               gap={2}
               alignItems="center"
               justifyItems={{
@@ -88,13 +80,7 @@ export default function ContentRight() {
             <GridItem
               w='100%'
               h="32px"
-              display={{
-                base: "grid",
-                sm: "flex",
-                md: "grid",
-                lg: "grid",
-                xl: "grid"
-              }}
+              display="grid"
               gap={2}
               alignItems="center"
               justifyItems={{
@@ -122,13 +108,7 @@ export default function ContentRight() {
             <GridItem
               w='100%'
               h="32px"
-              display={{
-                base: "grid",
-                sm: "flex",
-                md: "grid",
-                lg: "grid",
-                xl: "grid"
-              }}
+              display="grid"
               gap={2}
               alignItems="center"
               justifyItems={{
@@ -177,13 +157,7 @@ export default function ContentRight() {
             <GridItem
               w='100%'
               h="32px"
-              display={{
-                base: "grid",
-                sm: "flex",
-                md: "grid",
-                lg: "grid",
-                xl: "grid"
-              }}
+              display="grid"
               gap={2}
               alignItems="center"
               justifyItems={{

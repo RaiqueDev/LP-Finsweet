@@ -4,7 +4,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading2
 } from "../../../styles/theme/styles";
 
@@ -72,34 +72,32 @@ export default function HowItBegan() {
                   bgImg={"https://images.pexels.com/photos/6878173/pexels-photo-6878173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
               </Box>
 
-              <Box
+              <Flex
                 maxW="90%"
                 w="318px"
                 h="112px"
                 bg="#503AE7"
                 pos="absolute"
                 mb="60px"
-                display="flex"
-                alignItems="center"
+                gap="16px"
                 justifyContent="center"
-                gap="16px">
+                alignItems="center"
+                p="8px">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="30" fill="none" viewBox="0 0 48 30">
                   <path fill="#1AD993" fill-rule="evenodd" d="M1.553 3.53C0 5.716 0 8.81 0 15s0 9.285 1.553 11.47a8.395 8.395 0 0 0 1.978 1.977C5.715 30 8.81 30 15 30h18c6.19 0 9.285 0 11.47-1.553a8.395 8.395 0 0 0 1.977-1.978C48 24.285 48 21.19 48 15c0-6.19 0-9.285-1.553-11.47a8.395 8.395 0 0 0-1.978-1.977C42.285 0 39.19 0 33 0H15C8.81 0 5.715 0 3.53 1.553A8.395 8.395 0 0 0 1.554 3.53ZM20.95 20.286l9.45-5.384-9.45-5.384v10.768Z" clip-rule="evenodd" />
                 </svg>
 
                 <Heading2
-                  lineHeight="600"
                   color="#FFFFFF">
                   350+ Videos
                 </Heading2>
-              </Box>
+              </Flex>
             </Flex>
           </Flex>
 
           <Flex
             w="100%"
-            h="204px"
             alignItems="center"
             justifyContent="center"
             mt={{
@@ -117,14 +115,29 @@ export default function HowItBegan() {
               flexDir="column"
               justifyContent="space-between">
 
-              <Heading2>
+              <Heading2
+                textAlign={{
+                  base: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "left",
+                  xl: "left"
+                }}>
                 My origins on<br />
                 <span color="#503AE7">Youtube</span> in 2008
               </Heading2>
 
-              <BodyText>
+              <Body
+                mt="28px"
+                textAlign={{
+                  base: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "left",
+                  xl: "left"
+                }}>
                 Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-              </BodyText>
+              </Body>
             </Flex>
           </Flex>
         </Flex>

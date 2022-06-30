@@ -1,22 +1,23 @@
 import {
   Button,
   Flex,
+  Box,
   Input,
-  Stack
+  Stack,
+  Textarea
 } from "@chakra-ui/react";
+
+import { PrimaryButton } from "../../../styles/theme/styles";
 
 export default function Form() {
   return (
     <>
-      <Flex
+      <Box
         mt="48px"
         maxW="100%"
-        w="624px"
-        h="400px">
+        w="624px">
 
         <Stack
-          maxW="100%"
-          w="624px"
           spacing="16px">
 
           <Input
@@ -24,39 +25,44 @@ export default function Form() {
             h="48px"
             borderRadius="none"
             border="1 solid #AFB0B9"
-            bg="#F4F2FF" />
+            bg="offWhite"
+            color="gray"
+            px="16px" />
 
           <Input
             placeholder='Your Email Id'
             h="48px"
             borderRadius="none"
             border="1 solid #AFB0B9"
-            bg="#F4F2FF" />
+            bg="offWhite"
+            color="gray"
+            px="16px" />
 
           <Input
             placeholder='Query Related'
             h="48px"
             borderRadius="none"
             border="1 solid #AFB0B9"
-            bg="#F4F2FF" />
+            bg="offWhite"
+            color="gray"
+            px="16px" />
 
-          <Input
+          <Textarea
             placeholder='Message'
             h="128px"
             borderRadius="none"
             border="1 solid #AFB0B9"
-            bg="#F4F2FF" />
+            bg="offWhite"
+            color="gray"
+            py="12px"
+            px="16px" />
 
-          <Button
-            w="162px"
-            h="48px"
-            bg="#503AE7"
-            borderRadius="none"
-            color="#FFFFFF">
+          <PrimaryButton
+            w="162px">
             Contact now
-          </Button>
+          </PrimaryButton>
         </Stack>
-      </Flex>
+      </Box>
     </>
   )
 }

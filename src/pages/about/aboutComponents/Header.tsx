@@ -5,8 +5,9 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
-  Heading1
+  Body,
+  Heading1,
+  PrimaryButton
 } from "../../../styles/theme/styles";
 
 export default function Header() {
@@ -35,7 +36,6 @@ export default function Header() {
           <Flex
             maxW="100%"
             w="480px"
-            h="290px"
             flexDir="column"
             alignItems={{
               base: "center",
@@ -45,33 +45,37 @@ export default function Header() {
               xl: "start"
             }}>
 
-            <Heading1>
+            <Heading1
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
               About Finsweet
               Podcast
             </Heading1>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
               diam nonumy eirmod tempor invidunt ut labore et dolore
               magna aliquyam erat, sed diam voluptua.
-            </BodyText>
+            </Body>
 
-            <Button
+            <PrimaryButton
               mt="32px"
-              w="185px"
-              h="48px"
-              bg="#503AE7"
-              borderRadius="none"
-
-              fontFamily='Inter'
-              fontStyle="normal"
-              fontWeight="500"
-              fontSize="16px"
-              lineHeight="24px"
-              color="#FFFFFF">
+              w="185px">
               Subscribe Now!
-            </Button>
+            </PrimaryButton>
           </Flex>
 
           <Box

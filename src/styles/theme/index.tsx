@@ -1,3 +1,5 @@
+import { extendTheme } from '@chakra-ui/react'
+
 import { useRouter } from 'next/router'
 
 export default function ReadMore() {

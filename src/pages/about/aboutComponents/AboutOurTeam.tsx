@@ -4,7 +4,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading2
 } from "../../../styles/theme/styles";
 
@@ -32,9 +32,15 @@ export default function AboutOurTeam() {
 
             <Heading2
               maxW="100%"
-              w="351px"
-              h="76px">
-              A few words about our team
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
+              A few words about<br />
+              our team
             </Heading2>
 
             <Box
@@ -69,28 +75,40 @@ export default function AboutOurTeam() {
 
               <Box
                 maxW="100%"
-                w="496px"
-                h="120px">
+                w="496px">
 
-                <BodyText>
+                <Body
+                  textAlign={{
+                    base: "center",
+                    sm: "center",
+                    md: "center",
+                    lg: "left",
+                    xl: "left"
+                  }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                   eget condimentum enim libero ultricies amet odio fringilla. Ut nibh
                   morbi augue porta aliquet commodo. Fermentum auctor lacus
                   eget in ut integer viverra sed. Penatibus tortor consequat,
                   habitasse non nisl.
-                </BodyText>
+                </Body>
               </Box>
 
               <Box
                 maxW="100%"
-                w="496px"
-                h="74px">
+                w="496px">
 
-                <BodyText>
+                <Body
+                  textAlign={{
+                    base: "center",
+                    sm: "center",
+                    md: "center",
+                    lg: "left",
+                    xl: "left"
+                  }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus
                   cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat,
                   volutpat ut netus malesuada enim penatibus non aliquet.
-                </BodyText>
+                </Body>
               </Box>
             </Flex>
           </Flex>

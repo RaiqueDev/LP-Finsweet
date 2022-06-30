@@ -3,7 +3,12 @@ import {
   Button,
   Flex
 } from "@chakra-ui/react";
-import { BodyText, Heading2, Heading5 } from "../../../styles/theme/styles";
+
+import {
+  Body,
+  Heading2,
+  Heading5
+} from "../../../styles/theme/styles";
 
 export default function Header() {
   return (
@@ -39,7 +44,6 @@ export default function Header() {
           <Flex
             maxW="100%"
             w="397px"
-            h="361px"
             flexDir="column"
             alignItems={{
               base: "center",
@@ -51,19 +55,40 @@ export default function Header() {
 
             <Heading5
               textTransform="uppercase"
-              color="#503AE7" >
+              color="#503AE7"
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
               About The Host
             </Heading5>
 
             <Heading2
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Hey there, I’m Andrew Jonson and welcome to my Podcast
             </Heading2>
 
-            <BodyText
+            <Body
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}
               mt="32px">
               Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-            </BodyText>
+            </Body>
 
             <Button
               mt="43px"

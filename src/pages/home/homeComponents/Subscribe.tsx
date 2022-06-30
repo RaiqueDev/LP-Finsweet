@@ -29,6 +29,7 @@ export default function Subscribe() {
           justifyContent="center">
 
           <Heading2
+            textAlign="center"
             color="#FFFFFF">
             Receive new episodes in your inbox.
           </Heading2>

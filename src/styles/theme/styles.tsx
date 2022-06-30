@@ -1,7 +1,11 @@
 import {
   chakra,
-  Text
+  Text,
+  Button,
+  extendTheme
 } from "@chakra-ui/react";
+
+/* TEXT STYLES */
 
 export const LinkNavbar = chakra(Text, {
   baseStyle: {
@@ -12,6 +16,112 @@ export const LinkNavbar = chakra(Text, {
   },
 });
 
+/* Heading 1 */
+
+export const Heading1 = chakra(Text, {
+  baseStyle: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: "700",
+    fontSize: "48px",
+    lineHeight: "110%",
+    color: "#000000"
+  },
+});
+
+/* Heading 2 */
+
+export const Heading2 = chakra(Text, {
+  baseStyle: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: "700",
+    fontSize: "32px",
+    lineHeight: "120%",
+    color: "#000000"
+  },
+});
+
+/* Heading 3 */
+
+export const Heading3 = chakra(Text, {
+  baseStyle: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: "600",
+    fontSize: "24px",
+    lineHeight: "125%",
+    color: "#000000"
+  },
+});
+
+/* Heading 4 */
+
+export const Heading4 = chakra(Text, {
+  baseStyle: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: "600",
+    fontSize: "20px",
+    lineHeight: "140%",
+    color: "#000000"
+  },
+});
+
+/* Heading 5 */
+
+export const Heading5 = chakra(Text, {
+  baseStyle: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: "500",
+    fontSize: "16px",
+    lineHeight: "150%",
+    color: "#000000"
+  },
+});
+
+/* Heading 6 */
+
+export const Heading6 = chakra(Text, {
+  baseStyle: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: "500",
+    fontSize: "12px",
+    lineHeight: "150%",
+    color: "#000000"
+  },
+});
+
+/* Body */
+
+export const Body = chakra(Text, {
+  baseStyle: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: "400",
+    fontSize: "16px",
+    lineHeight: "150%",
+    color: "#000000"
+  },
+});
+
+/* SeeMore */
+
+export const SeeMore = chakra(Text, {
+  baseStyle: {
+    fontFamily: 'Inter',
+    fontStyle: "normal",
+    fontWeight: "600",
+    fontSize: "16px",
+    lineHeight: "150%",
+    color: "#000000"
+  }
+})
+
+/* Caption */
+
 export const Caption = chakra(Text, {
   baseStyle: {
     fontFamily: 'Inter',
@@ -21,93 +131,80 @@ export const Caption = chakra(Text, {
     lineHeight: "20px",
     letterSpacing: "3px",
     textTransform: "uppercase",
-    color: "#503AE7"
+    color: "#000000"
   }
 })
 
-export const SeeMore = chakra(Text, {
+/* COLOR STYLES */
+
+export const theme = extendTheme({
+  colors: {
+    green: "#1AD993",
+    aquamarine: "#ABFFE0",
+    blue: "#503AE7",
+    purple: "#832BC1",
+    black: "#14142B",
+    gray: "#AFB0B9",
+    offWhite: "#F4F2FF",
+  },
+})
+
+/* PRIMARY BUTTON */
+
+export const PrimaryButton = chakra(Button, {
   baseStyle: {
+    background: "#503AE7",
+    _hover: {
+      bg: '#3E2DB2'
+    },
+    rounded: "none",
+    padding: "12px 32px",
+
     fontFamily: 'Inter',
+    fontStyle: "normal",
+    fontWeight: "500",
+    fontSize: "16px",
+    lineHeight: "24px",
+
+    color: "#FFFFFF"
+  }
+})
+
+export const SecondaryButton = chakra(Button, {
+  baseStyle: {
+    _hover: {
+      border: "2px solid #1AD993",
+      color: "#1AD993"
+    },
+    rounded: "none",
+    padding: "12px 32px",
+    border: "2px solid #F4F2FF",
+
+    fontFamily: 'Inter',
+    fontStyle: "normal",
+    fontWeight: "500",
+    fontSize: "16px",
+    lineHeight: "24px",
+
+    color: "#FFFFFF"
+  }
+})
+
+export const ListenNow = chakra(Button, {
+  baseStyle: {
+    _hover: {
+      color: '#3E2DB2'
+    },
+    fontFamily: "Inter",
     fontStyle: "normal",
     fontWeight: "600",
     fontSize: "16px",
     lineHeight: "150%",
-    color: "#503AE7"
+    color: "#503AE7",
+    cursor: "pointer"
   }
 })
-
-export const BodyText = chakra(Text, {
-  baseStyle: {
-    fontFamily: "Inter",
-    fontSize: { base: "12px", sm: "14px", md: "15px", lg: "14px", xl: "15px" },
-    fontWeight: "400",
-    lineHeight: { base: "24px", sm: "24px", md: "24px", lg: "24px", xl: "24px" },
-    letterSpacing: "0px",
-    textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
-  },
-});
-
-export const Heading1 = chakra(Text, {
-  baseStyle: {
-    fontFamily: "Inter",
-    fontSize: { base: "26px", sm: "38px", md: "40px", lg: "44px", xl: "48px" },
-    fontWeight: "700",
-    lineHeight: { base: "43px", sm: "46px", md: "48px", lg: "50px", xl: "53px" },
-    letterSpacing: "0px",
-    textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
-  },
-});
-
-export const Heading2 = chakra(Text, {
-  baseStyle: {
-    fontFamily: "Inter",
-    fontSize: { base: "20px", sm: "26px", md: "30px", lg: "32px", xl: "32px" },
-    fontWeight: "700",
-    lineHeight: { base: "32px", sm: "32px", md: "32px", lg: "32px", xl: "32px" },
-    letterSpacing: "0px",
-    textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
-  },
-});
-
-export const Heading3 = chakra(Text, {
-  baseStyle: {
-    fontFamily: "Inter",
-    fontSize: { base: "19px", sm: "20px", md: "20px", lg: "21px", xl: "21px" },
-    fontWeight: "600",
-    lineHeight: { base: "30px", sm: "30px", md: "30px", lg: "30px", xl: "30px" },
-    letterSpacing: "0px"
-  },
-});
-
-export const Heading4 = chakra(Text, {
-  baseStyle: {
-    fontFamily: "Inter",
-    fontSize: { base: "20px", sm: "20px", md: "20px", lg: "20px", xl: "20px" },
-    fontWeight: "600",
-    lineHeight: { base: "20px", sm: "20px", md: "20px", lg: "20px", xl: "20px" },
-    letterSpacing: "0px",
-    textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
-  },
-});
-
-export const Heading5 = chakra(Text, {
-  baseStyle: {
-    fontFamily: "Inter",
-    fontSize: { base: "16px", sm: "16px", md: "16px", lg: "16px", xl: "16px" },
-    fontWeight: "600",
-    lineHeight: { base: "24px", sm: "24px", md: "24px", lg: "24px", xl: "24px" },
-    letterSpacing: "0px",
-    textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
-  },
-});
-
-export const Heading6 = chakra(Text, {
-  baseStyle: {
-    fontFamily: "Inter",
-    fontSize: { base: "12px", sm: "12px", md: "12px", lg: "12px", xl: "12px" },
-    fontWeight: "600",
-    lineHeight: { base: "18px", sm: "18px", md: "18px", lg: "18px", xl: "18px" },
-    letterSpacing: "0px",
-    textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
-  },
-});
+/*
+fontSize: { base: "12px", sm: "14px", md: "15px", lg: "14px", xl: "15px" },
+textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
+*/

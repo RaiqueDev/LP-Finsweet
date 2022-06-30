@@ -6,9 +6,10 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading2,
-  Heading3
+  Heading3,
+  SeeMore
 } from "../../../styles/theme/styles";
 
 import MaskGroup from '../../../styles/images/MaskGroup.svg'
@@ -51,12 +52,11 @@ export default function ArticlesAndNews() {
                 articles & news
               </Heading2>
 
-              <BodyText
+              <SeeMore
                 mt="16px"
-                color="#503AE7"
-                fontWeight="600">
+                color="#503AE7">
                 See More
-              </BodyText>
+              </SeeMore>
             </Box>
 
             <Flex
@@ -75,7 +75,6 @@ export default function ArticlesAndNews() {
 
           <Flex
             w="100%"
-            h='516px'
             flexDir="column"
             justifyContent="space-between">
 
@@ -85,42 +84,35 @@ export default function ArticlesAndNews() {
               bgRepeat="no-repeat"
               bgSize="cover"
               bgPosition="left"
-              bgImg="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?cs=srgb&dl=pexels-david-mcbee-730547.jpg&fm=jpg" >
-
-            </Box>
+              bgImg="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?cs=srgb&dl=pexels-david-mcbee-730547.jpg&fm=jpg" />
 
             <Flex
               w="100%"
-              h="164px"
               flexDir="column"
               justifyContent="space-between">
 
-              <Heading3>
+              <Heading3
+                mt="32px">
                 Getting the first 100 customers for
                 your business
               </Heading3>
 
-              <BodyText
+              <Body
+                mt="16px"
                 textAlign="left">
                 Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.
-              </BodyText>
+              </Body>
 
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="600"
-                lineHeight="24px"
-                letterSpacing="0px"
-                textAlign="left"
+              <SeeMore
+                mt="16px"
                 color="#503AE7">
                 Read Now
-              </Text>
+              </SeeMore>
             </Flex>
           </Flex>
 
           <Flex
             w="100%"
-            h='516px'
             flexDir="column"
             justifyContent="space-between">
 
@@ -131,9 +123,7 @@ export default function ArticlesAndNews() {
               bgRepeat="no-repeat"
               bgSize="cover"
               bgPosition="left"
-              bgImg="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?cs=srgb&dl=pexels-drew-williams-3568520.jpg&fm=jpg" >
-
-            </Box>
+              bgImg="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?cs=srgb&dl=pexels-drew-williams-3568520.jpg&fm=jpg" />
 
             <Flex
               w="100%"
@@ -141,25 +131,22 @@ export default function ArticlesAndNews() {
               flexDir="column"
               justifyContent="space-between">
 
-              <Heading3>
+              <Heading3
+                mt="32px">
                 Apparently we had reached a great height in the atmosphere, ...
               </Heading3>
 
-              <BodyText
+              <Body
+                mt="16px"
                 textAlign="left">
                 Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.
-              </BodyText>
+              </Body>
 
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="600"
-                lineHeight="24px"
-                letterSpacing="0px"
-                textAlign="left"
+              <SeeMore
+                mt="16px"
                 color="#503AE7">
                 Read Now
-              </Text>
+              </SeeMore>
             </Flex>
           </Flex>
         </SimpleGrid>

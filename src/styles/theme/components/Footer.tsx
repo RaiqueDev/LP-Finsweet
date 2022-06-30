@@ -1,5 +1,14 @@
-import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
-import { BodyText, Heading2, Heading3 } from "../styles";
+import {
+  Box,
+  Flex,
+  SimpleGrid
+} from "@chakra-ui/react";
+
+import {
+  Body,
+  Heading2,
+  Heading3
+} from "../styles";
 
 export default function Footer() {
   return (
@@ -72,29 +81,29 @@ export default function Footer() {
                 flexDir="column"
                 justifyContent="space-between">
 
-                <BodyText
+                <Body
                   color="#fff"
                   textAlign="left">
                   Home
-                </BodyText>
+                </Body>
 
-                <BodyText
+                <Body
                   color="#fff"
                   textAlign="left">
                   Podcast
-                </BodyText>
+                </Body>
 
-                <BodyText
+                <Body
                   color="#fff"
                   textAlign="left">
                   Host
-                </BodyText>
+                </Body>
 
-                <BodyText
+                <Body
                   color="#fff"
                   textAlign="left">
                   Blog
-                </BodyText>
+                </Body>
               </Box>
             </Box>
 
@@ -125,17 +134,17 @@ export default function Footer() {
                 flexDir="column"
                 justifyContent="space-between">
 
-                <BodyText
+                <Body
                   color="#fff"
                   textAlign="left">
                   Contact
-                </BodyText>
+                </Body>
 
-                <BodyText
+                <Body
                   color="#fff"
                   textAlign="left">
                   About
-                </BodyText>
+                </Body>
               </Box>
 
             </Box>

@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading1
 } from "../../../styles/theme/styles";
 
@@ -38,27 +38,42 @@ export default function Header() {
           <Flex
             maxW="90%"
             w="486px"
-            h="302px"
             flexDir="column"
             justifyContent="space-between">
 
-            <Heading1>
-              Become The Hero<br />
+            <Heading1
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
+              Become The Hero
               Of Your Own Story
             </Heading1>
 
-            <BodyText>
+            <Body
+              mt="32px"
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "center",
+                lg: "left",
+                xl: "left"
+              }}>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
               diam nonumy eirmod tempor invidunt ut labore et dolore
               magna aliquyam erat.
-            </BodyText>
+            </Body>
 
             <InputGroup
-              size='md'>
+              h="48px"
+              mt="32px"
+              bg="#F4F2FF">
 
               <Input
-                bg="#F4F2FF"
-                pr='4.5rem'
+                h="100%"
                 placeholder='Enter Your Email Id'
                 border="none"
                 borderRadius="none"
@@ -66,7 +81,8 @@ export default function Header() {
 
               <InputRightElement
                 maxW="90%"
-                w='154px'>
+                w='154px'
+                h="100%">
 
                 <Button
                   bg="#503AE7"
@@ -77,7 +93,6 @@ export default function Header() {
                   fontSize="18px"
                   fontWeight="700"
                   lineHeight="24px"
-                  letterSpacing="0px"
                   textAlign="left"
                   color="#F4F2FF"
                 >

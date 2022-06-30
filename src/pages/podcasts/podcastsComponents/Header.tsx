@@ -4,7 +4,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading2,
   Heading5
 } from "../../../styles/theme/styles";
@@ -31,7 +31,6 @@ export default function Header() {
         <Flex
           maxW="90%"
           w="768px"
-          h="468px"
           ml={{
             base: "0px",
             sm: "0px",
@@ -43,30 +42,34 @@ export default function Header() {
           opacity="0.9"
           borderLeft="16px solid #1AD993"
           alignItems="center"
-          justifyContent="center">
+          justifyContent="center"
+          py="96px"
+          color="white">
 
           <Box
             maxW="90%"
-            w="593px"
-            color="#F4F2FF">
+            w="593px">
 
             <Heading5
               textAlign="left"
-              textTransform="uppercase">
+              textTransform="uppercase"
+              color="offWhite">
               Featured
             </Heading5>
 
             <Heading2
               textAlign="left"
-              mt="16px">
+              mt="16px"
+              color="offWhite">
               A UX Case Study on Creating a Studious Environment
             </Heading2>
 
-            <BodyText
+            <Body
               textAlign="left"
-              mt="16px">
+              mt="16px"
+              color="offWhite">
               Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon
-            </BodyText>
+            </Body>
 
             <Flex
               mt="16px"
@@ -80,11 +83,11 @@ export default function Header() {
                 <path fill="#fff" d="m21.333 16-8.888 5.645v-11.29L21.332 16Z" />
               </svg>
 
-              <BodyText
+              <Body
                 fontWeight="600"
-                color="#F4F2FF">
+                color="offWhite">
                 Listen Now
-              </BodyText>
+              </Body>
             </Flex>
           </Box>
         </Flex>

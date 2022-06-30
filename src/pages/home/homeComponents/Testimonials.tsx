@@ -5,7 +5,7 @@ import {
 } from "@chakra-ui/react";
 
 import {
-  BodyText,
+  Body,
   Heading2
 } from "../../../styles/theme/styles";
 
@@ -47,14 +47,28 @@ export default function Testimonials() {
               w="372px"
               flexDir="column">
 
-              <Heading2>
+              <Heading2
+                textAlign={{
+                  base: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "left",
+                  xl: "left"
+                }}>
                 What our listeners say
               </Heading2>
 
-              <BodyText
+              <Body
+                textAlign={{
+                  base: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "left",
+                  xl: "left"
+                }}
                 mt="16px">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat, volutpat ut netus malesuada enim penatibus non aliquet.
-              </BodyText>
+              </Body>
             </Flex>
 
             <Flex
@@ -91,17 +105,14 @@ export default function Testimonials() {
             mt="64px">
 
             <Box
-              w="100%"
-              h='295px'
-              borderBottom="12px solid #503AE7">
+              w="100%">
 
               <Flex
                 maxW="100%"
                 w="212px"
                 h="80px"
                 alignItems="center"
-                justifyContent="space-between"
-              >
+                justifyContent="space-between">
 
                 <Box
                   w="80px"
@@ -112,13 +123,12 @@ export default function Testimonials() {
                   bgPosition="left"
                   bgImg="https://images.pexels.com/photos/3310695/pexels-photo-3310695.jpeg?cs=srgb&dl=pexels-ike-louie-natividad-3310695.jpg&fm=jpg" />
 
-                <Box
-                  w="116px">
+                <Box w="116px">
 
-                  <BodyText
+                  <Body
                     pb="8px">
                     Eve Madien
-                  </BodyText>
+                  </Body>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" fill="none" viewBox="0 0 116 20">
                     <path fill="#FF7602" d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L34 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L34 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L58 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L58 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L82 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L82 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L106 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L106 0Z" />
@@ -127,16 +137,20 @@ export default function Testimonials() {
                 </Box>
               </Flex>
 
-              <BodyText
+              <Body
                 mt="16px">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget condimentum enim libero ultricies amet odio fringilla. Ut nibh morbi augue porta aliquet commodo. Fermentum auctor lacus eget in ut integer viverra sed. Penatibus tortor consequat.
-              </BodyText>
+              </Body>
+
+              <Box
+                mt="67px"
+                w="100%"
+                h="12px"
+                bg="#503AE7" />
             </Box>
 
             <Box
-              w="100%"
-              h='295px'
-              borderBottom="12px solid #503AE7">
+              w="100%">
 
               <Flex
                 maxW="100%"
@@ -158,10 +172,10 @@ export default function Testimonials() {
                 <Box
                   w="116px">
 
-                  <BodyText
+                  <Body
                     pb="8px">
                     Ash Benfred
-                  </BodyText>
+                  </Body>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" fill="none" viewBox="0 0 116 20">
                     <path fill="#FF7602" d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L34 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L34 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L58 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L58 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L82 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L82 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L106 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L106 0Z" />
@@ -170,16 +184,20 @@ export default function Testimonials() {
                 </Box>
               </Flex>
 
-              <BodyText
+              <Body
                 mt="16px">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget condimentum enim libero ultricies amet odio fringilla. Ut nibh morbi augue porta aliquet commodo. Fermentum auctor lacus eget in ut integer viverra sed. Penatibus tortor consequat.
-              </BodyText>
+              </Body>
+
+              <Box
+                mt="67px"
+                w="100%"
+                h="12px"
+                bg="#503AE7" />
             </Box>
 
             <Box
-              w="100%"
-              h='295px'
-              borderBottom="12px solid #503AE7">
+              w="100%">
 
               <Flex
                 maxW="100%"
@@ -201,10 +219,10 @@ export default function Testimonials() {
                 <Box
                   w="116px">
 
-                  <BodyText
+                  <Body
                     pb="8px">
                     Ryan Smith
-                  </BodyText>
+                  </Body>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" fill="none" viewBox="0 0 116 20">
                     <path fill="#FF7602" d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L34 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L34 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L58 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L58 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L82 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L82 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L106 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L106 0Z" />
@@ -213,10 +231,16 @@ export default function Testimonials() {
                 </Box>
               </Flex>
 
-              <BodyText
+              <Body
                 mt="16px">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget condimentum enim libero ultricies amet odio fringilla. Ut nibh morbi augue porta aliquet commodo. Fermentum auctor lacus eget in ut integer viverra sed. Penatibus tortor consequat.
-              </BodyText>
+              </Body>
+
+              <Box
+                mt="67px"
+                w="100%"
+                h="12px"
+                bg="#503AE7" />
             </Box>
           </SimpleGrid>
         </Flex>
