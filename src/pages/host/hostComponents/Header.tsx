@@ -10,6 +10,8 @@ import {
   Heading5
 } from "../../../styles/theme/styles";
 
+import ImageHost from '../../../styles/images/ImageHost.svg'
+
 export default function Header() {
   return (
     <>
@@ -36,9 +38,10 @@ export default function Header() {
           <Box
             maxW="100%"
             w="339px"
-            h="462px"
-            bg="pink">
+            justifyContent="center"
+            alignItems="center">
 
+            <img src={ImageHost} alt="ImageHost" />
           </Box>
 
           <Flex

@@ -10,6 +10,8 @@ import {
   PrimaryButton
 } from "../../../styles/theme/styles";
 
+import IconAbout from '../../../styles/images/IconAbout.svg'
+
 export default function Header() {
   return (
     <>
@@ -87,16 +89,9 @@ export default function Header() {
               xl: "0px"
             }}
             maxW="100%"
-            w="480px"
-            h={{
-              base: "340px",
-              sm: "340px",
-              md: "340px",
-              lg: "480px",
-              xl: "480px"
-            }}
-            bg="pink">
+            w="480px">
 
+            <img src={IconAbout} alt="Icon About" />
           </Box>
         </Flex>
       </Flex>

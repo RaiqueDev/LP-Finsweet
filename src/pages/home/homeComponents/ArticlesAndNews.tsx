@@ -1,8 +1,7 @@
 import {
   Box,
   Flex,
-  SimpleGrid,
-  Text
+  SimpleGrid
 } from "@chakra-ui/react";
 
 import {
@@ -31,14 +30,12 @@ export default function ArticlesAndNews() {
             xl: 3
           }}
           spacing='16px'
-          placeItems={"center"}
           maxW="90%"
           w="1280px">
 
           <Flex
             bg='#F4F2FF'
             w="100%"
-            h='516px'
             flexDir="column"
             alignItems="center"
             justifyContent="space-between">
@@ -60,12 +57,10 @@ export default function ArticlesAndNews() {
             </Box>
 
             <Flex
-              w="100%"
-              h="320px">
+              w="100%">
 
               <Flex
-                w="100%"
-                h="320px">
+                w="100%">
 
                 <img src={MaskGroup} />
               </Flex>
@@ -83,7 +78,7 @@ export default function ArticlesAndNews() {
               h="320px"
               bgRepeat="no-repeat"
               bgSize="cover"
-              bgPosition="left"
+              bgPosition="center"
               bgImg="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?cs=srgb&dl=pexels-david-mcbee-730547.jpg&fm=jpg" />
 
             <Flex
@@ -119,15 +114,13 @@ export default function ArticlesAndNews() {
             <Box
               w="100%"
               h="320px"
-              bg="green.400"
               bgRepeat="no-repeat"
               bgSize="cover"
-              bgPosition="left"
+              bgPosition="center"
               bgImg="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?cs=srgb&dl=pexels-drew-williams-3568520.jpg&fm=jpg" />
 
             <Flex
               w="100%"
-              h="164px"
               flexDir="column"
               justifyContent="space-between">
 
