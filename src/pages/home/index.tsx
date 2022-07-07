@@ -16,6 +16,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
+    </>
+  )
+}
+
+
+/*
+
       <Header />
       <Brands />
       <WhoIsItFor />
@@ -26,20 +33,4 @@ export default function Home() {
       <ArticlesAndNews />
       <Sponsors />
       <Footer />
-    </>
-  )
-}
-
-/*
-<Navbar />
-<Header />
-<Brands />
-<WhoIsItFor />
-<HowItBegan />
-<RecentEpisodes />
-<Testimonials />
-<Subscribe />
-<ArticlesAndNews />
-<Sponsors />
-<Footer />
 */

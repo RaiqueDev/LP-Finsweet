@@ -14,18 +14,33 @@ import {
 } from "@chakra-ui/react";
 
 import {
+  AddressBook,
+  CaretRight,
+  ChatText,
+  ComputerTower,
   FacebookLogo,
+  House,
+  Info,
   InstagramLogo,
   LinkedinLogo,
-  List
+  List,
+  Microphone,
+  X
 } from "phosphor-react";
+
+import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
 import { LinkNavbar } from "../styles";
 
+import {
+  Heading5
+} from "../../../styles/theme/styles";
+
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const [placement, setPlacement] = useState('right')
 
   return (
     <>
@@ -161,7 +176,149 @@ export default function Navbar() {
               justifyContent="center"
               cursor="pointer">
 
-              <List size={25} />
+              <List
+                size={25}
+                onClick={onOpen} />
+
+              <Drawer
+                onClose={onClose}
+                isOpen={isOpen}>
+
+                <DrawerOverlay />
+                <DrawerContent
+                  bg="#FFF">
+
+                  <DrawerHeader borderBottomWidth='1px'>
+                    <X
+                      color="#14142B"
+                      cursor="pointer"
+                      size={25}
+                      onClick={onClose} />
+                  </DrawerHeader>
+                  <DrawerBody>
+                    <Flex
+                      cursor="pointer"
+                      mt="25px"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      maxW="99%">
+
+                      <Link to="/">
+                        <Heading5>
+                          Home
+                        </Heading5>
+                      </Link>
+
+                      <Link to="/">
+                        <CaretRight
+                          color="#14142B"
+                          size={20} />
+                      </Link>
+                    </Flex>
+
+                    <Flex
+                      cursor="pointer"
+                      mt="25px"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      maxW="99%">
+
+                      <Link to="/podcasts">
+                        <Heading5>
+                          Podcast
+                        </Heading5>
+                      </Link>
+
+                      <Link to="/podcasts">
+                        <CaretRight
+                          color="#14142B"
+                          size={20} />
+                      </Link>
+                    </Flex>
+
+                    <Flex
+                      cursor="pointer"
+                      mt="25px"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      maxW="99%">
+
+                      <Link to="/host">
+                        <Heading5>
+                          Host
+                        </Heading5>
+                      </Link>
+
+                      <Link to="/host">
+                        <CaretRight
+                          color="#14142B"
+                          size={20} />
+                      </Link>
+                    </Flex>
+
+                    <Flex
+                      cursor="pointer"
+                      mt="25px"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      maxW="99%">
+
+                      <Link to="/about">
+                        <Heading5>
+                          About
+                        </Heading5>
+                      </Link>
+
+                      <Link to="/about">
+                        <CaretRight
+                          color="#14142B"
+                          size={20} />
+                      </Link>
+                    </Flex>
+
+                    <Flex
+                      cursor="pointer"
+                      mt="25px"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      maxW="99%">
+
+                      <Link to="/blog">
+                        <Heading5>
+                          Blog
+                        </Heading5>
+                      </Link>
+
+                      <Link to="/blog">
+                        <CaretRight
+                          color="#14142B"
+                          size={20} />
+                      </Link>
+                    </Flex>
+
+                    <Flex
+                      cursor="pointer"
+                      mt="25px"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      maxW="99%">
+
+                      <Link to="/contact">
+                        <Heading5>
+                          Contact
+                        </Heading5>
+                      </Link>
+
+                      <Link to="/contact">
+                        <CaretRight
+                          color="#14142B"
+                          size={20} />
+                      </Link>
+                    </Flex>
+
+                  </DrawerBody>
+                </DrawerContent>
+              </Drawer>
             </Box>
           </Flex>
         </Flex>

@@ -204,7 +204,3 @@ export const ListenNow = chakra(Button, {
     cursor: "pointer"
   }
 })
-/*
-fontSize: { base: "12px", sm: "14px", md: "15px", lg: "14px", xl: "15px" },
-textAlign: { base: "center", sm: "center", md: "center", lg: "left", xl: "left" }
-*/
