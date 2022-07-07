@@ -20,13 +20,3 @@ export default function Podcasts() {
     </>
   )
 }
-
-/*
-<Navbar />
-<Header />
-<RecentEpisodes />
-<AllEpisodes />
-<CTAPodcast />
-<Sponsors />
-<Footer />
-*/

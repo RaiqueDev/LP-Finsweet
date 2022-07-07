@@ -24,20 +24,3 @@ export default function App() {
     </>
   )
 }
-
-/*
-<Home />
-<Podcasts />
-<About />
-<Host />
-<Blog />
-<Contact />
-
-<Routes>
-<Route path="/" element={<Home />} />
-<Route path="about" element={<About />} />
-<Route path="host" element={<Host />} />
-<Route path="blog" element={<Blog />} />
-<Route path="blog" element={<Blog />} />
-</Routes>
-*/

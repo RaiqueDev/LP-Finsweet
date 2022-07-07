@@ -29,18 +29,3 @@ export default function Home() {
     </>
   )
 }
-
-
-/*
-
-      <Header />
-      <Brands />
-      <WhoIsItFor />
-      <HowItBegan />
-      <RecentEpisodes />
-      <Testimonials />
-      <Subscribe />
-      <ArticlesAndNews />
-      <Sponsors />
-      <Footer />
-*/

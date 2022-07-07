@@ -1,46 +1,29 @@
+import { Link } from "react-router-dom";
+
 import {
   Box,
-  Button,
   Drawer,
   DrawerBody,
-  DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Flex,
-  Input,
   useDisclosure
 } from "@chakra-ui/react";
 
 import {
-  AddressBook,
   CaretRight,
-  ChatText,
-  ComputerTower,
   FacebookLogo,
-  House,
-  Info,
   InstagramLogo,
   LinkedinLogo,
   List,
-  Microphone,
   X
 } from "phosphor-react";
 
-import { useState } from "react";
-
-import { Link } from "react-router-dom";
-
 import { LinkNavbar } from "../styles";
-
-import {
-  Heading5
-} from "../../../styles/theme/styles";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [placement, setPlacement] = useState('right')
 
   return (
     <>

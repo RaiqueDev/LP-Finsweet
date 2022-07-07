@@ -24,14 +24,3 @@ export default function About() {
     </>
   )
 }
-
-/*
-  <Header />
-  <Items />
-  <AboutOurTeam />
-  <MeetOurTeam />
-  <OurSponsors />
-  <RecentEpisodes />
-  <Sponsors />
-  <Footer />
-*/

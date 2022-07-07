@@ -25,16 +25,3 @@ export default function Host() {
     </>
   )
 }
-
-/*
-  <Navbar />
-  <Header />
-  <Brands />
-  <DreamSection />
-  <Journey />
-  <Achievements />
-  <CTA />
-  <RecentEpisodes />
-  <Sponsors />
-  <Footer />
-*/

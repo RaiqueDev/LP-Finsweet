@@ -15,11 +15,3 @@ export default function Blog() {
     </>
   )
 }
-
-/*
-<Navbar />
-<BlogHero />
-<AllBlogs />
-<Sponsors/>
-<Footer />
-*/
