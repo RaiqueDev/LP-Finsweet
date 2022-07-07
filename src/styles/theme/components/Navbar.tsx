@@ -184,18 +184,35 @@ export default function Navbar() {
                 onClose={onClose}
                 isOpen={isOpen}>
 
-                <DrawerOverlay />
+                <DrawerOverlay
+                  display={{
+                    base: "flex",
+                    sm: "flex",
+                    md: "flex",
+                    lg: "none",
+                    xl: "none"
+                  }}
+                />
                 <DrawerContent
-                  bg="#FFF">
+                  bg="#FFF"
+                  display={{
+                    base: "flex",
+                    sm: "flex",
+                    md: "flex",
+                    lg: "none",
+                    xl: "none"
+                  }}>
 
-                  <DrawerHeader borderBottomWidth='1px'>
+                  <DrawerHeader borderColor="#F4F2FF" borderBottomWidth='1px'>
                     <X
                       color="#14142B"
                       cursor="pointer"
                       size={25}
                       onClick={onClose} />
                   </DrawerHeader>
+
                   <DrawerBody>
+
                     <Flex
                       cursor="pointer"
                       mt="25px"
@@ -204,9 +221,9 @@ export default function Navbar() {
                       maxW="99%">
 
                       <Link to="/">
-                        <Heading5>
+                        <LinkNavbar>
                           Home
-                        </Heading5>
+                        </LinkNavbar>
                       </Link>
 
                       <Link to="/">
@@ -224,9 +241,9 @@ export default function Navbar() {
                       maxW="99%">
 
                       <Link to="/podcasts">
-                        <Heading5>
+                        <LinkNavbar>
                           Podcast
-                        </Heading5>
+                        </LinkNavbar>
                       </Link>
 
                       <Link to="/podcasts">
@@ -244,9 +261,9 @@ export default function Navbar() {
                       maxW="99%">
 
                       <Link to="/host">
-                        <Heading5>
+                        <LinkNavbar>
                           Host
-                        </Heading5>
+                        </LinkNavbar>
                       </Link>
 
                       <Link to="/host">
@@ -264,9 +281,9 @@ export default function Navbar() {
                       maxW="99%">
 
                       <Link to="/about">
-                        <Heading5>
+                        <LinkNavbar>
                           About
-                        </Heading5>
+                        </LinkNavbar>
                       </Link>
 
                       <Link to="/about">
@@ -284,9 +301,9 @@ export default function Navbar() {
                       maxW="99%">
 
                       <Link to="/blog">
-                        <Heading5>
+                        <LinkNavbar>
                           Blog
-                        </Heading5>
+                        </LinkNavbar>
                       </Link>
 
                       <Link to="/blog">
@@ -304,9 +321,9 @@ export default function Navbar() {
                       maxW="99%">
 
                       <Link to="/contact">
-                        <Heading5>
+                        <LinkNavbar>
                           Contact
-                        </Heading5>
+                        </LinkNavbar>
                       </Link>
 
                       <Link to="/contact">

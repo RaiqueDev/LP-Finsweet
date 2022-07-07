@@ -16,6 +16,16 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <Header />
+      <Brands />
+      <WhoIsItFor />
+      <HowItBegan />
+      <RecentEpisodes />
+      <Testimonials />
+      <Subscribe />
+      <ArticlesAndNews />
+      <Sponsors />
+      <Footer />
     </>
   )
 }
