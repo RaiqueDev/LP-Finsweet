@@ -10,7 +10,7 @@ import {
   Heading5
 } from "../../../styles/theme/styles";
 
-import ImageHost from '../../../styles/images/ImageHost.svg'
+import ImageHost from '../../../styles/images/ImageHost.jpg';
 
 export default function Header() {
   return (

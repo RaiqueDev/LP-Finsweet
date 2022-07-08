@@ -9,7 +9,7 @@ import {
   SecondaryButton
 } from "../../../styles/theme/styles";
 
-import CTAB from '../../../styles/images/CTABackground.svg';
+import CTAB from '../../../styles/images/CTABackground.jpg';
 
 export default function CTA() {
   return (

@@ -8,7 +8,7 @@ import {
   Heading2
 } from "../../../styles/theme/styles";
 
-import ImageAboutOurTeam from '../../../styles/images/ImageAboutOurTeam.svg';
+import ImageAboutOurTeam from '../../../styles/images/ImageAboutOurTeam.jpg';
 
 export default function AboutOurTeam() {
   return (

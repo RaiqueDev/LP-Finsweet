@@ -9,7 +9,7 @@ import {
   SecondaryButton
 } from "../../../styles/theme/styles";
 
-import CTABPodcast from '../../../styles/images/CTABackgroundPodcast.svg';
+import CTABPodcast from '../../../styles/images/CTABackgroundPodcast.jpg';
 
 export default function CTAPodcast() {
   return (

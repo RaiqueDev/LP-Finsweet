@@ -10,6 +10,8 @@ import {
   SeeMore
 } from "../../../styles/theme/styles";
 
+import BlogHeroImg from '../../../styles/images/BlogHeroImg.jpg';
+
 export default function BlogHero() {
   return (
     <>
@@ -109,7 +111,7 @@ export default function BlogHero() {
             maxW="100%"
             w="616px"
             h="448px"
-            bgImg="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            bgImg={BlogHeroImg} />
         </Flex>
       </Flex>
     </>

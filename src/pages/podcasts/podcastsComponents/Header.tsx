@@ -9,7 +9,7 @@ import {
   Heading5
 } from "../../../styles/theme/styles";
 
-import HeaderB from '../../../styles/images/HeaderB.svg'
+import HeaderB from '../../../styles/images/HeaderB.jpg';
 
 export default function Header() {
   return (
